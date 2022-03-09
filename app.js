@@ -38,10 +38,7 @@ const getNumberOfRestaurants = (msg) => {
 
   console.log('⚡️ Bolt app is running!');
   app.message(/^(lunchpicker|lunchpicker help)$/, async ({ say }) => {
-    say(`I'll pick an assortment of random restaurants for you.\n
-    Simply type "Lunchpicker lunch 3" and I will pick 3 restaurants at random from the google sheet https://docs.google.com/spreadsheets/d/1hp8ghkSsM_H-qrG2Rlpd6RauxJ425EiJqdpuG7e4Pq8/\n
-    You can then vote on them using the number emoji.\n
-    A maximum of 5 restaurants is supported for sanity's sake.
+    say(`I'll pick an assortment of random restaurants for you.\nSimply type "Lunchpicker lunch 3" and I will pick 3 restaurants at random from the google sheet https://docs.google.com/spreadsheets/d/1hp8ghkSsM_H-qrG2Rlpd6RauxJ425EiJqdpuG7e4Pq8/\nYou can then vote on them using the number emoji.\nA maximum of 5 restaurants is supported for sanity's sake.
     `)
   })
 
