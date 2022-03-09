@@ -8,13 +8,11 @@
     "start": "node app.js",
     "dev": "nodemon app.js"
   },
-  "engines": {
-    "node": "16.7.0"
-  },
   "author": "jimmy@skelios.com",
   "license": "ISC",
   "dependencies": {
     "@slack/bolt": "^3.10.0",
+    "dotenv": "^16.0.0",
     "google-sheets-api": "^0.4.1"
   },
   "devDependencies": {
