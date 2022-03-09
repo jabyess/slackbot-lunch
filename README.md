@@ -21,9 +21,3 @@ To run the app there are several `ENV` variables that you need to set:
 1. Choose API Key
 1. Copy the API key
 
-[sample Sheet]: https://docs.google.com/spreadsheets/d/1fZXtKnxwcxP4GWGMRFtGun1VOnDYuiAgAR_yWlgEx_o/edit#gid=1318762544
-[Google Sheets API]: https://developers.google.com/google-apps/spreadsheets/
-[Slack Bots]: https://slack.com/apps/A0F7YS25R-bots
-[Google Developer Console]: https://console.developers.google.com/project
-[google-sheets-api]: https://www.npmjs.com/package/google-sheets-api#usage
-[slack-group]: https://api.slack.com/docs/formatting#linking_to_urls
