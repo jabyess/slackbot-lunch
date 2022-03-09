@@ -1,0 +1,75 @@
+Arguments: 
+  /home/jabyess/.nvm/versions/node/v16.7.0/bin/node /home/jabyess/.nvm/versions/node/v16.7.0/bin/yarn install
+
+PATH: 
+  /home/jabyess/.yarn/bin:/home/jabyess/.deno/bin:/home/jabyess/.nimble/bin:/home/jabyess/.nvm/versions/node/v16.7.0/bin:/home/jabyess/.pyenv/shims:/home/jabyess/.pyenv/bin:/usr:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/usr/local/go/bin:/home/jabyess/.local/bin:/home/jabyess/.rvm/bin
+
+Yarn version: 
+  1.22.17
+
+Node version: 
+  16.7.0
+
+Platform: 
+  linux x64
+
+Trace: 
+  SyntaxError: /home/jabyess/repos/lunch-bot/package.json: Unexpected token } in JSON at position 702
+      at JSON.parse (<anonymous>)
+      at /home/jabyess/.nvm/versions/node/v16.7.0/lib/node_modules/yarn/lib/cli.js:1625:59
+      at Generator.next (<anonymous>)
+      at step (/home/jabyess/.nvm/versions/node/v16.7.0/lib/node_modules/yarn/lib/cli.js:310:30)
+      at /home/jabyess/.nvm/versions/node/v16.7.0/lib/node_modules/yarn/lib/cli.js:321:13
+
+npm manifest: 
+  {
+    "name": "lunch-bot",
+    "version": "1.0.0",
+    "description": "A bot that picks a few restaurants from a google sheet so people can vote",
+    "main": "app.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1",
+      "start": "node app.js",
+      "general": "node dist/generalAnnouncement.js",
+      "signup": "node dist/postSignup.js",
+      "presignup": "babel src --out-dir dist",
+      "private": "node dist/privateReminder.js",
+      "preprivate": "babel src --out-dir dist",
+      "pregeneral": "babel src --out-dir dist",
+      "postinstall": "mkdir -p dist && babel src --out-dir dist"
+    },
+    "babel": {
+      "presets": [
+        "es2015"
+      ]
+    },
+    "engines": {
+      "node": "16.7.0",
+    },
+    "author": "Sparkbox",
+    "license": "ISC",
+    "dependencies": {
+      "babel-cli": "^6.5.1",
+      "babel-preset-es2015": "^6.5.0",
+      "body-parser": "^1.18.2",
+      "express": "^4.16.2",
+      "google-sheets-api": "^0.4.1",
+      "lodash": "^4.5.0",
+      "pg": "^7.4.1",
+      "slack-client": "^2.0.2"
+    },
+    "devDependencies": {
+      "eslint": "^3.7.1",
+      "eslint-config-airbnb": "^12.0.0",
+      "eslint-plugin-jsx-a11y": "^2.2.3",
+      "eslint-plugin-flowtype": "^2.20.0",
+      "eslint-plugin-import": "^2.0.1",
+      "eslint-plugin-react": "^6.4.1"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

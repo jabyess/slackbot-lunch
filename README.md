@@ -11,7 +11,7 @@ To run the app there are several `ENV` variables that you need to set:
 ### `sheetUrl`
 URL to the Google Sheet you'll be using with your team. Here's a [sample Sheet] you can copy to start your own.
 
-### `sheetID`
+### `GOOGLE_SHEET_ID`
 ID of the Google Sheet you want to parse. In our [sample Sheet], the ID is `1fZXtKnxwcxP4GWGMRFtGun1VOnDYuiAgAR_yWlgEx_o`.
 
 ### `slackToken`
