@@ -33,7 +33,8 @@ const getNumberOfRestaurants = (msg) => {
 }
 
 (async () => {
-  await app.start();
+  await app.start(process.env.PORT || 3333);
+  console.log(`port: ${process.env.PORT}`)
 
   console.log(`⚡️ Bolt app is running ⚡️`);
   app.message(/^(lunchpicker|lunchpicker help)$/, async ({ say }) => {
