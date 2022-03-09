@@ -7,7 +7,6 @@ const app = new App({
   token: process.env.SLACK_BOT_TOKEN,
   appToken: process.env.SLACK_BOT_SOCKET_TOKEN,
   socketMode: true,
-  port: (process.env.PORT || 3333)
 });
 
 const doc = new GoogleSpreadsheet(process.env.GOOGLE_SHEET_ID);
